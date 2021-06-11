@@ -5,7 +5,7 @@ package com.epam.prejap.tetris.block;
  *
  * @author Bartlomiej Gluch
  */
-public class PBlock extends Block {
+final class PBlock extends Block {
 
     private static final byte[][] IMAGE = {
             {1, 1},

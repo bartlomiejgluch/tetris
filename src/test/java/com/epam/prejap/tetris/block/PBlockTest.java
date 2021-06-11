@@ -5,13 +5,10 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
 
-/**
- * @author Bartlomiej Gluch
- */
-@Test(dataProvider = "pBlockShape")
+@Test(groups = {"blockShapes", "blocks"})
 public class PBlockTest {
 
-
+    @Test(dataProvider = "pBlockShape")
     public void testShapeOfPBlock(byte[][] expected) {
         //when
         byte[][] actual = new PBlock().image;
@@ -20,7 +17,7 @@ public class PBlockTest {
         assertEquals(actual, expected);
     }
 
-    @DataProvider()
+    @DataProvider
     public static Object[][] pBlockShape() {
         byte[][] pBlock = {
                 {1, 1},
@@ -29,6 +26,4 @@ public class PBlockTest {
         };
         return new Object[][]{pBlock};
     }
-
-
 }
