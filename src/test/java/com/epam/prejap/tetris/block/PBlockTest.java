@@ -3,13 +3,13 @@ package com.epam.prejap.tetris.block;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
 
 @Test(groups = {"blockShapes", "blocks"})
 public class PBlockTest {
 
     @Test(dataProvider = "pBlockShape")
-    public void testShapeOfPBlock(byte[][] expected) {
+    public void testPBlockShapeCorrectness(byte[][] expected) {
         //when
         byte[][] actual = new PBlock().image;
 
