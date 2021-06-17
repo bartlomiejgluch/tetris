@@ -9,7 +9,7 @@ import static org.testng.Assert.assertEquals;
 public class PBlockTest {
 
     @Test(dataProvider = "pBlockShape")
-    public void testPBlockShapeCorrectness(byte[][] expected) {
+    public void pBlockShapeShouldMatchPattern(byte[][] expected) {
         //when
         byte[][] actual = new PBlock().image;
 
