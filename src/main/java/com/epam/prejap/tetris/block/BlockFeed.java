@@ -10,8 +10,8 @@ public class BlockFeed {
     private final List<Supplier<Block>> blocks = List.of(
 // Please vertical placement of shapes
             OBlock::new,
-            PBlock::new
-
+            PBlock::new,
+            TBlock::new
     );
 
     public BlockFeed() {
