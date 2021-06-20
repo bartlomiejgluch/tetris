@@ -11,7 +11,9 @@ public class BlockFeed {
 // Please vertical placement of shapes
             OBlock::new,
             PBlock::new,
-            TBlock::new
+            TBlock::new,
+            YBlock::new
+
     );
 
     public BlockFeed() {
